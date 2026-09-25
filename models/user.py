@@ -1,7 +1,11 @@
 from sqlalchemy import Column, String, Integer, Boolean, Float, ForeignKey
-from ..main import Base
-from sqlalchemy_utils.types import ChoiceType
-from ...types.roles import ROLES
+
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from database_config import Base
 
 class User(Base):
     __tablename__ = "users"
@@ -11,7 +15,7 @@ class User(Base):
     email = Column("email", String, nullable=False)
     password = Column("password", String)
     active = Column("active", Boolean, default=True)
-    role = Column("role", ChoiceType(choices=ROLES))
+    role = Column("role", String)
 
     def __init__(
         self, 

@@ -12,3 +12,7 @@ app.include_router(trip_router)
 # SQLALCHEMY use a ORM concept: transform python class in entity inside data base
 
 # To run: uvicorn main:app --reload
+
+# MIGRATIONS COMANDS:
+#   alembic revision --autogenerate -m "message"
+#   alembic upgrade head

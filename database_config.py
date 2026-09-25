@@ -5,6 +5,7 @@ db = create_engine("sqlite:///database.db")
 
 Base = declarative_base()
 
+
 # Step by step to use sqlalchemy
 
 # 1. Create data base connection
