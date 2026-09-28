@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from sqlalchemy.orm import sessionmaker
-from database_config import bd
+from database_config import db
 from models import User
 
 auth_router = APIRouter(prefix="/auth", tags=["auth"])
@@ -14,7 +14,7 @@ async def home():
 
 @auth_router.post("/create_user")
 async def create_user(email: str, password: str, name: str):
-    Session = sessionmaker(bind=bd)
+    Session = sessionmaker(bind=db)
     session = Session()
 
     user = session.query(User).filter(User.email == email).first()
