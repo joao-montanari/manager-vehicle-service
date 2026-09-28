@@ -1,0 +1,30 @@
+{
+  "trips": [
+    {
+      "vehicleId": "01a08955-9df3-75d0-8c0c-9595da7869e3",
+      "tripId": "01a0bb46-9387-7369-803d-8cd7c3fc1a7c",
+      "startTime": "2026-09-19T19:07:26.796Z",
+      "durationValue": 2824.0,
+      "durationUnit": "s",
+      "startAddress": "Hvidovre Strandvej 93, 2650 Hvidovre, Denmark",
+      "endAddress": "Hegnet 11, 4100 Ringsted, Denmark",
+      "distanceValue": 55.0,
+      "distanceUnit": "km",
+      "tripType": "business",
+      "purpose": null
+    }, 
+    {
+      "vehicleId": "01a08955-9df3-75d0-8c0c-9595da7869e3",
+      "tripId": "01a0bb56-2610-7e91-a0bd-a01cdc12e13f",
+      "startTime": "2026-09-19T20:11:36.800Z",
+      "durationValue": 0.0,
+      "durationUnit": "s",
+      "startAddress": "Parque Portugal Campinas, Av. Dr. Heitor Penteado, 1671 - Parque Taquaral, Campinas - SP, 13087-000",
+      "endAddress": "H-15 - Av. Reitor Benedito José Barreto Fonseca - Parque dos Jacarandás, Campinas - SP, 13086-900",
+      "distanceValue": 0.0,
+      "distanceUnit": "km",
+      "tripType": "business",
+      "purpose": "private"
+    }
+  ]
+}

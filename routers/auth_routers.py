@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 from sqlalchemy.orm import sessionmaker
 from database_config import db
-from models import User
+from models.ORMs import User
 
 auth_router = APIRouter(prefix="/auth", tags=["auth"])
 
